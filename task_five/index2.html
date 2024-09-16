@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: white;
+            padding: 10px;
+            width: 900px;
+            border-radius: 0px;
+            border: 1px solid black; 
+
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        input[type="text"]{
+            width: 50%;
+            padding: 5px;
+        }
+
+         input[type="submit"] {
+            margin-top: 10px;
+            color: black;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+        textarea {
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Basic Form</h2>
+    <form>
+        <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required/>
+        </p>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <p>
+            <label for="Country" >Country:</label>
+            <select name="Country" id="Country" >
+              <option value="select an option">select an option</option>
+              <option value="Amman">Amman</option>
+              <option value="usa">usa</option>
+              <option value="usn">usn</option>
+              <option value="Audi">Audi</option>
+            </select>
+            <br><br>
+        </p>
+        <p> <input type="checkbox" id="confirmation" name="confirmation" required>
+            <label for="confirmation">Subscribe?</label</p>
+        <p>
+            <label for="message">Message:</label>
+            <br/>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Your Message here"></textarea>
+        </p>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

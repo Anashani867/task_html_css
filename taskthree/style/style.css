@@ -1,0 +1,23 @@
+body {
+    min-height: 80vh;
+    max-width: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 2rem;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-top:1px solid #333; 
+    border-bottom:1px solid #333; ;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      
+}

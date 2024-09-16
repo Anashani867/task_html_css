@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: white;
+            padding: 10px;
+            width: 900px;
+
+
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 50%;
+            padding: 5px;
+        }
+
+         input[type="submit"] {
+            margin-top: 10px;
+            color: black;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+        textarea {
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Basic Form</h2>
+    <form>
+        <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name"required />
+        </p>
+        <p>
+            <label for="surname">surname</label>
+            <input type="text" id="surname" name="surname" placeholder="Your surname" required/>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </p>
+        <p>
+            <label for="message">Message:</label>
+            <br/>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Your Message here"></textarea>
+        </p>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
